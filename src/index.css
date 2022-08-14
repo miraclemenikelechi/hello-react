@@ -40,6 +40,16 @@
 
 .main-container {
     margin: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-background {
+    position: absolute;
+    /* width: 100%; */
+    /* background: red; */
+    top: 40%;
+    left: 325px;
 }
 
 .main-container h1 {
