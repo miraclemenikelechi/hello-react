@@ -19,5 +19,5 @@ const
     };
 
 
-root.render(MyFirstReact());
-// root.render(<MyFirstReactHEADER />);
+// root.render(MyFirstReact());
+root.render(<MyFirstReactHEADER />);
