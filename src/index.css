@@ -2,83 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter',
+    font-size: 16px;
+    font-family: 'Poppins',
         sans-serif;
-    font-size: 10px;
+    /* background: rgba(20, 20, 70, 0.1) !important; */
 }
 
-.container {
-    background: #33373E;
-    height: 100vh;
+section {
+    margin: 20px;
 }
 
 .navigation {
+    width: 100%;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+    margin: 20px 50px;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.experiences-text {
+    margin: 0 20px;
+}
+
+.experiences-text h1 {
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.experiences-text p {
+    font-weight: 300;
+    width: 320px;
+    font-size: 1rem;
+}
+
+.cards-section {
+    padding: 30px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #21222A;
-    padding: 20px;
 }
 
-.navigation img {
-    width: 50px;
-    padding: 5px;
+.card-container {
+    width: 176px;
 }
 
-.navigation h1 {
-    font-size: 4em;
-    margin-right: auto;
-    color: #61DAFB;
-    font-weight: 700;
+.card-image img {
+    max-width: 100%;
 }
 
-.navigation h3 {
-    color: #DEEBF8;
-    font-size: 2.5em;
-    font-weight: 600;
+.card-info-rating {
+    font-weight: 300;
+    color: #918E9B;
+    text-transform: uppercase;
 }
 
-.main-container {
-    margin: 30px;
+.card-info-rating span {
+    font-weight: 300;
+    color: #222222;
 }
 
-.main-container h1 {
-    font-size: 4em;
-    font-weight: 700;
-    margin: 20px 0;
-    color: #ffffff;
+.card-info-rating img:nth-child(1) {
+    width: 14px;
 }
 
-.main-container ul {
-    list-style-type: none;
+.card-info-rating img:nth-child(2) {
+    width: 5px;
 }
 
-.main-container ul li::before {
-    content: "\2022";
-    color: #61DAFB;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+.card-info-name {
+    width: 100%;
+    font-size: .75rem;
+    font-weight: 300;
 }
 
-.main-container li {
-    font-size: 1.9em;
-    margin: 30px;
-    color: #ffffff;
-    font-weight: 400;
+.card-info-pricing {
+    font-weight: 300;
 }
 
-@media screen and (max-width:550px) {
-    .navigation h1 {
-        font-size: 2em;
-    }
-
-    .navigation h3 {
-        font-size: 1.5em;
-    }
-
-    .main-container h1 {
-        font-size: 3em;
-    }
+.card-info-pricing span {
+    font-weight: 500;
 }

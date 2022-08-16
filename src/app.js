@@ -1,12 +1,14 @@
 import React from "react";
-import Main from "./components/main";
 import Navbar from "./components/navbar";
+import Hero from "./components/hero";
+import Card from "./components/cards";
 
 export default function App() {
     return (
-        <section className="container">
+        <main>
             <Navbar />
-            <Main />
-        </section>
+            <Hero />
+            <Card/>
+        </main>
     );
 }
