@@ -2,83 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter',
+    font-family: 'DM Sans',
         sans-serif;
-    font-size: 10px;
+    font-size: 16px;
+}
+
+.travels {
+    margin: 20px;
+}
+
+a {
+    font-size: 11px;
+    color: #918E9B;
+    white-space: nowrap;
 }
 
 .container {
-    background: #33373E;
-    height: 100vh;
+    height: 100%;
 }
 
 .navigation {
+    background: #F55A5A;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    background: #21222A;
+    height: 55px;
+}
+
+.navigation p {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: .9375rem;
+    font-weight: 700;
+}
+
+.travel-container {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.travel-image {
+    min-width: 125px;
+    height: 168px;
+}
+
+.travel-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.travel-info {
     padding: 20px;
 }
 
-.navigation img {
-    width: 50px;
-    padding: 5px;
+.travel-country {
+    display: flex;
+    align-items: center;
 }
 
-.navigation h1 {
-    font-size: 4em;
-    margin-right: auto;
-    color: #61DAFB;
-    font-weight: 700;
+.travel-country span:nth-child(2) {
+    margin-left: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100px;
 }
 
-.navigation h3 {
-    color: #DEEBF8;
-    font-size: 2.5em;
+.travel-country span:nth-child(3) {
+    margin-left: 15px;
+}
+
+.travel-location h2 {
+    font-size: 1.5625rem;
+    width: 100%;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.travel-dates span {
+    font-size: .8125rem;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
-.main-container {
-    margin: 30px;
-}
-
-.main-container h1 {
-    font-size: 4em;
-    font-weight: 700;
-    margin: 20px 0;
-    color: #ffffff;
-}
-
-.main-container ul {
-    list-style-type: none;
-}
-
-.main-container ul li::before {
-    content: "\2022";
-    color: #61DAFB;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-.main-container li {
-    font-size: 1.9em;
-    margin: 30px;
-    color: #ffffff;
+.travel-description {
+    font-size: .64rem;
+    width: 100%;
     font-weight: 400;
-}
-
-@media screen and (max-width:550px) {
-    .navigation h1 {
-        font-size: 2em;
-    }
-
-    .navigation h3 {
-        font-size: 1.5em;
-    }
-
-    .main-container h1 {
-        font-size: 3em;
-    }
 }

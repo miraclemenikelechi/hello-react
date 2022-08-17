@@ -1,16 +1,28 @@
 import React from "react";
+import { MdLocationOn } from "react-icons/md";
 
-export default function Main() {
+export default function Main(props) {
     return (
-        <section className="main-container">
-            <h1>Fun facts about React</h1>
-            <ul>
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100k stars on GitHub</li>
-                <li>Is maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
+        <section className="travel-container">
+            <div className="travel-image">
+                <img src={require(`../img/${props.travel.imageUrl}`)} alt="" />
+            </div>
+            <div className="travel-info">
+                <div className="travel-country">
+                    <MdLocationOn color="F55A5A" />
+                    <span>{props.travel.location}</span>
+                    <span><a href={props.travel.googleMapsUrl}>View on Google Maps</a></span>
+                </div>
+                <div className="travel-location">
+                    <h2>{props.travel.title}</h2>
+                </div>
+                <div className="travel-dates">
+                    <span>{props.travel.startDate}</span> - <span>{props.travel.endDate}</span>
+                </div>
+                <div className="travel-description">
+                    <p>{props.travel.description}</p>
+                </div>
+            </div>
         </section>
     );
 }
