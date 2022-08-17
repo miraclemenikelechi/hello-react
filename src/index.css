@@ -12,6 +12,13 @@ section {
     margin: 20px;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
 .navigation {
     width: 100%;
     padding: 30px 40px;
@@ -46,14 +53,42 @@ section {
     padding: 30px 20px;
     display: flex;
     align-items: center;
+    overflow: auto;
 }
 
 .card-container {
     width: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.card-status{
+    position: absolute;
+    background: #ffffff;
+    top: 10px;
+    left: 10px;
+    border-radius: 3px;
+    width: 61px;
+    height: 20px;
+    font-size: .625rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 .card-image img {
     max-width: 100%;
+}
+
+.card-info {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .card-info-rating {
@@ -79,6 +114,9 @@ section {
     width: 100%;
     font-size: .75rem;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-info-pricing {
